@@ -2,7 +2,7 @@
 # from this file. This prevents redundancy.
 
 def split_data():
-    data = get_data_dict()
+    data = get_data_dict('./data/alzheimers_disease_data.csv')
     metadata_keys = ["PatientID", "Diagnosis", "DoctorInCharge"]
     internal_factors_keys = [
         "Age", "Gender", "Ethnicity", "BMI", "FamilyHistoryAlzheimers",
@@ -25,8 +25,8 @@ def split_data():
     return metadata, internal_factors, external_factors
 
 
-def get_data_dict():
-    with open('./data/alzheimers_disease_data.csv', 'r') as f:
+def get_data_dict(path):
+    with open(path, 'r') as f:
         lines = f.readlines()
 
     header = lines[0].strip().split(',')
@@ -45,7 +45,7 @@ def get_data_dict():
 
 if __name__ == '__main__':
     # Accessing data (per column) can be done in the following way:
-    data = get_data_dict()
+    data = get_data_dict('./data/alzheimers_disease_data.csv')
     column = data['PatientID']
     print(column[:5] + ['...'])
 
