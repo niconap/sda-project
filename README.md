@@ -14,7 +14,7 @@ measurements and comparing them to what is already known from the dataset.
 ## Installation and running the files
 The project consists of multiple Jupyter Notebooks, of which the title indicates
 the content. We recommend to create a virtual environment to install all
-dependencies in `requirements.txt` (*TO DO: create `requirements.txt`*).
+dependencies in `requirements.txt`.
 
 ## References
 Kharoua, Rabie El. *Alzheimer's Disease Dataset.* 2024. *Kaggle*, Kaggle,
