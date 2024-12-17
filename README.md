@@ -19,6 +19,3 @@ dependencies in `requirements.txt`.
 ## References
 Kharoua, Rabie El. *Alzheimer's Disease Dataset.* 2024. *Kaggle*, Kaggle,
 https://www.kaggle.com/dsv/8668279.
-
-Adeyemi, Timothy. *Dementia Patient Health Dataset.* 2024. *Kaggle*, Kaggle
-https://www.kaggle.com/datasets/timothyadeyemi/dementia-patient-health-dataset/code
