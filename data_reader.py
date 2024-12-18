@@ -1,5 +1,5 @@
 # These data reading functions can be used over and over by just importing them
-# from this file. This prevents redundancy.
+# from this file, which prevents redundancy.
 
 def split_data():
     data = get_data_dict('./data/alzheimers_disease_data.csv')
@@ -41,13 +41,3 @@ def get_data_dict(path):
             except ValueError:
                 data[header[i]].append(value)
     return data
-
-
-if __name__ == '__main__':
-    # Accessing data (per column) can be done in the following way:
-    data = get_data_dict('./data/alzheimers_disease_data.csv')
-    column = data['PatientID']
-    print(column[:5] + ['...'])
-
-    # To see all column names:
-    print(list(data.keys())[:5] + ['...'])
